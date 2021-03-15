@@ -45,3 +45,6 @@ span.resaltado {
          url('../fonts/reggae-one-v1-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/reggae-one-v1-latin-regular.svg#ReggaeOne') format('svg'); /* Legacy iOS */
   }
+  p.parrafo-enlace {
+      font-size: 40px;
+  }

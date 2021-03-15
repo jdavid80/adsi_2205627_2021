@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactenos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+    <h1>Contactenos</h1>
+    <form action="confirmacion.html" method="post">
+        <fieldset>
+        <legend>Ingrese la información</legend>
+        Por favor, ingrese sus nombres<br>
+        <input type="text" name="nombres"><br><br>
+        Por favor, ingrese sus apellidos<br>
+        <input type="text" name="apellidos"><br><br>
+        Ingrese su petición, queja o reclamo<br>
+        <textarea name="Pregunta" cols="40" rows="5"></textarea><br><br>
+        Genero<br>
+        <input type="radio" name="genero" value="Masculino" checked="checked">Masculino<br>
+        <input type="radio" name="genero" value="Femenino">Femenino<br>
+        <input type="radio" name="genero" value="Indeterminado">Indeterminado<br><br>
+        Tipo de Bicicleta de interés<br>
+        <input type="checkbox" name="tipo-bici" value="mtb">Mountain Bike<br>
+        <input type="checkbox" name="tipo-bici" value="ruta">Ruta<br>
+        <input type="checkbox" name="tipo-bici" value="hibrida">Híbrida<br>
+        <input type="checkbox" name="tipo-bici" value="electrica">Eléctrica<br>
+        <input type="checkbox" name="tipo-bici" value="otra">Otra. Cual?<input type="text" name="Otra-bici"><br><br>
+        Ciudad<br>
+        <select name="municipio">
+            <option value="Neiva">Neiva</option><br>
+            <option value="Pitalito">Pitalito</option><br>
+            <option value="Garzón">Garzón</option><br>
+            <option value="San Agustín">San Agustín</option><br>
+            <option value="Palestina">Palestina</option><br>
+            <option value="Acevedo">Acevedo</option><br>
+            <option value="Timaná">Timaná</option><br>
+            <option value="Saladoblanco">Saladoblanco</option><br>
+            <option value="Oporapa">Oporapa</option><br>
+            <option value="Elias">Elias</option><br>
+        </select><br><br>
+        <input type="submit" value="Enviar">
+    </fieldset>
+    </form>
+    <a href="index.html">Volver a la página principal</a>
+</body>
+</html>
