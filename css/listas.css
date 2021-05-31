@@ -1,0 +1,20 @@
+ul {
+    font-size: 1.8em;
+    background: rgb(64,64,64);
+    color: white;
+    text-align: right;
+}
+li {
+    display: inline-block;
+    padding: 20px;
+}
+li.contactos {
+    margin-right: 50px;
+}
+a.enlace-menu {
+    text-decoration: none;
+    color: white;
+}
+a.enlace-menu:hover {
+    font-size: 1.05em;
+}

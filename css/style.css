@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 h1, h2 {
     text-align: center;
 }
@@ -32,6 +36,8 @@ span.resaltado {
     font-weight: bold;
     font-family: 'roboto', serif;
 }
+
+
 /* reggae-one-regular - latin */
 @font-face {
     font-family: 'Reggae One';

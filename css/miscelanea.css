@@ -1,0 +1,46 @@
+/* Agrupamiento */
+.box-1, .box-2, .box-3, .box-4 {
+    margin: 40px;
+    color:rgb(48,48,48);
+    width: 430px;
+    display: inline-block;
+    line-height: 0.1em;
+}
+body {
+    text-align: center;
+    color: rgb(204, 62, 27);
+    margin: 0;
+    border: 0;
+}
+p {
+    font-size: 1.5em;
+}
+img {
+   /*  margin: 0 auto; */
+   /*  width: 350px; */
+}
+#titulo-principal {
+    font-size: 3em;
+    color: darkorange;
+    font-style: italic;
+    text-align: center;
+    font-family: helvetica, sans-serif;
+}
+.bici-margin1, .bici-margin2, .bici-margin3, .bici-margin4 {
+    background: salmon;
+    display: block;
+     width: 360px;
+    padding: 20px;
+}
+.bici-margin2 {
+    /* display: inline; */
+    background: salmon;
+    margin-right: 0;
+    margin-top: 40px;
+    width: 100%;
+}
+.img-margin2 {
+    float: right;
+}
+
+
