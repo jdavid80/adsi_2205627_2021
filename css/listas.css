@@ -1,8 +1,8 @@
 ul {
     font-size: 1.8em;
-    background: rgb(64,64,64);
+    background: rgb(220,8,20);
     color: white;
-    text-align: right;
+    text-align: center;
 }
 li {
     display: inline-block;
