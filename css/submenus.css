@@ -1,0 +1,51 @@
+nav a {
+    display: block;
+}
+ul {
+    /* 3 */
+    list-style: none;
+}
+li {
+    /* 4 */
+    line-height: 2.5em;
+}
+#menu-primario {
+/* 5 */
+    background-color: darkcyan;
+    display: inline-block;
+    width: 100%;
+
+    position: absolute;
+}
+.items-nivel1 {
+    /* 1 */
+    float: left;
+    /* 2 */
+    width: 170px;
+
+    position: relative;
+}
+.enlace-nivel1 {
+    /* display: block; */
+}
+#menu-secundario {
+    /* 6 */
+    top: 100%;
+}
+.items-nivel2 {
+    width: 220px;
+    /* 7 */
+     max-height: 0;
+     /* 8 */
+    overflow:hidden;
+    
+}
+/* 9 */
+.items-nivel1:hover > ul > .items-nivel2{
+    overflow: visible;
+    max-height: 100%;
+    
+}
+
+
+
