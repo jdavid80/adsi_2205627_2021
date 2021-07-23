@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#nav-bar {
+    position: absolute;
+    
+    width: 100%;
+}
+ul {
+    text-align: right;
+}
+li {
+    display: inline-block;
+    font-size: 1.8em;
+    padding: 1em;
+}
+a {
+    text-decoration: none;
+    color: rgb(48,48,48);
+}
+.img-principal {
+    width: 100%;
+}
+p {
+    font-size: 1.8em;
+    text-align: justify;
+}
+#content-main {
+    margin: 4em 2em;
+}
