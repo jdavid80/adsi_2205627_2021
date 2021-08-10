@@ -1,11 +1,12 @@
 body {
     background-color: #252528;
-
+    color: rgba(255, 255, 255, .4);
+    font-family: 'Raleway', sans-serif;
+    padding: 0 1em;
 }
-nav {
-    background-color: rgb(0,0,0, .8);
+/* nav { */
+    /* background-color: rgb(0,0,0, .8);
     position: absolute;
-    left: 0;
     top: 0;
     padding-top: 3em;
     height: 100%;
@@ -13,6 +14,72 @@ nav {
     z-index: 5;
     left: -330px;
     transition: all .3s;
+    box-sizing: border-box; */
+
+/*     box-sizing: border-box;
+    position: absolute;
+    left: -18em;
+    padding-top: 3em;
+    top: 0;
+    transition: all .3s;
+    z-index: 20;
+    height: 100%;
+} */
+nav {
+    background: rgba(0,0,0,.8);
+    /* box-sizing evita que cualquier elemento dentro
+    de la caja expanda la caja. */
+    box-sizing: border-box;
+    position: absolute;
+    left: -18em;
+    padding-top: 3em;
+    top: 0;
+    transition: all .3s;
+    z-index: 20;
+    height: 100%;
+}
+article {
+    padding: .5em 0;
+    line-height: 1.5em;
+}
+.menu {
+    list-style: none;
+    line-height: 42px;
+    margin: 2em auto;
+    padding-left: 0;
+    width: 18em;
+}
+.menu a {
+    color: #ddd;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    transition: all .5s;
+}
+.menu li {
+    /* outline: 1px solid green; */
+    /* border-left: 1px solid rgba(255,255,255,.2); */
+    box-shadow: 3px 0 rgba(255,255,255,.2) inset;
+    padding-left: 1.5em;
+    margin-right: 10px;
+    transition: all .5s;
+}
+.menu li:hover {
+    box-shadow: 17em 0 rgba(255,255,255,.2) inset;
+}
+li.items {
+    color: whitesmoke;
+}
+.menu li a span {
+    margin-left: 9px;
+}
+.menu a:hover {
+    margin-left: 1em;
+}
+
+nav.mostrar {
+    left: 0;
 }
 ul {
     list-style: none;
@@ -38,20 +105,32 @@ li {
     cursor: pointer;
     z-index: 10;
 }
-.menu {
-    width: 16em;
-}
-.menu a {
-    color: #ddd;
+/* .menu { */
+    /* width: 16em; */
+/*     list-style: none;
+    line-height: 42px;
+    margin: 2em auto;
+    padding-left: 0;
+    width: 18em;
+} */
+/* .menu a { */
+    /* color: #ddd;
     text-decoration: none;
     display: block;
     width: 100%;
+    transition: all .5s; */
+/*     color: #ddd;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
     transition: all .5s;
-}
-.menu li {
-    box-shadow: 3px 0 rgba(255,255,255,.2) inset;
+} */
+/* .menu li { */
+   /*  box-shadow: 3px 0 rgba(255,255,255,.2) inset;
     padding-left: 1.5em;
     margin-right: 10px;
+<<<<<<< HEAD
     display: block;
     cursor: pointer;
 
@@ -59,13 +138,25 @@ li {
 .menu li:hover {
     box-shadow: 17em 0 rgba(255,255,255,.2) inset;
 }
+=======
+ */
+/*     box-shadow: 3px 0 rgba(255,255,255,.2) inset;
+    padding-left: 1.5em;
+    margin-right: 10px;
+} */
+/* .menu li:hover {
+    /* box-shadow: 17em 0 rgba(255,255,255,.2) inset; */
+
+/*     box-shadow: 17em 0 rgba(255,255,255,.2) inset;
+} */
+>>>>>>> Develop
 .menu li a span 
 {
     margin-left: 9px;
-}
-.menu a:hover {
+} */
+/* .menu a:hover {
     margin-left: 1em;
-}
+} */
 h1 {
     text-align: center;
 }
