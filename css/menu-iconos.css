@@ -130,7 +130,6 @@ li {
    /*  box-shadow: 3px 0 rgba(255,255,255,.2) inset;
     padding-left: 1.5em;
     margin-right: 10px;
-<<<<<<< HEAD
     display: block;
     cursor: pointer;
 
@@ -138,18 +137,6 @@ li {
 .menu li:hover {
     box-shadow: 17em 0 rgba(255,255,255,.2) inset;
 }
-=======
- */
-/*     box-shadow: 3px 0 rgba(255,255,255,.2) inset;
-    padding-left: 1.5em;
-    margin-right: 10px;
-} */
-/* .menu li:hover {
-    /* box-shadow: 17em 0 rgba(255,255,255,.2) inset; */
-
-/*     box-shadow: 17em 0 rgba(255,255,255,.2) inset;
-} */
->>>>>>> Develop
 .menu li a span 
 {
     margin-left: 9px;
