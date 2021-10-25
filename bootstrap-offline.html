@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-offline</title>
+    <link rel="stylesheet" href="css/boostrap-offline.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap-offline.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+    <h1>Bootstrap Offline</h1>
+    <div class="container style-container">
+        <div class="row">
+            <h2>Form Control Básico</h2>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo Electrónico">
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Observaciones</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="container style-container">
+        <div class="row">
+            <h2>Input File</h2>
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Opción para seleccionar un solo archivo</label>
+                <input class="form-control" type="file" id="formFile">
+              </div>
+        </div>
+        <div class="row">
+            <div class="mb-3">
+                <label for="formFileMultiple" class="form-label">Opción para seleccionar múltiples archivos</label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
+            </div>
+        </div>
+    </div>
+    <div class="container style-container">
+        <div class="row">
+            <h2>Datalist</h2>
+            <label for="exampleDataList" class="form-label">Seleccione el municipio de residencia</label>
+            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Ingrese el municipio">
+            <datalist id="datalistOptions">
+                <option value="Palestina">
+                <option value="San Agustín">
+                <option value="Pitalito">
+                <option value="Acevedo">
+                <option value="Saladoblanco">
+            </datalist>
+        </div>
+    </div>
+    <div class="container style-container">
+        <div class="row">
+            <h2>Select</h2>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione el lenguaje de programación que mas utiliza</option>
+                <option value="1">Javascript</option>
+                <option value="2">PHP</option>
+                <option value="3">C#</option>
+                <option value="4">Java</option>
+              </select>
+        </div>
+    </div>
+    <div class="container style-container">
+        <div class="row">
+            <h2>Check</h2>
+            <h5>Seleccione las librerias y frameworks que utiliza para desarrollo:</h5>
+            <div class="form-check">
+                <input class="form-check-input cursor-input" type="checkbox" value="" id="flexCheckReact">
+                <label class="form-check-label cursor-input" for="flexCheckReact">
+                  React
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input cursor-input" type="checkbox" value="" id="flexCheckAngular">
+                <label class="form-check-label cursor-input" for="flexCheckAngular">
+                  Angular
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input cursor-input" type="checkbox" value="" id="flexCheckVue">
+                <label class="form-check-label cursor-input" for="flexCheckVue">
+                  Vue
+                </label>
+              </div>
+        </div>
+    </div> 
+    <div class="container style-container">
+        <div class="row">
+            <h2>Radio</h2>
+            <div class="form-check">
+                <input class="form-check-input cursor-input" type="radio" name="flexRadioDefault" id="flexRadioHombre">
+                <label class="form-check-label cursor-input" for="flexRadioHombre">
+                  Hombre
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input cursor-input" type="radio" name="flexRadioDefault" id="flexRadioMujer">
+                <label class="form-check-label cursor-input" for="flexRadioMujer">
+                  Mujer
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input cursor-input" type="radio" name="flexRadioDefault" id="flexRadioIndeterminado">
+                <label class="form-check-label cursor-input" for="flexRadioIndeterminado">
+                  Indeterminado
+                </label>
+            </div>
+        </div>
+    </div> 
+    <div class="container style-container">
+        <div class="row">
+            <h2>Floating Labels</h2>
+            <div class="form-floating mb-3 col-6">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Nombres">
+                <label for="floatingInput">Nombres</label>
+            </div>
+            <div class="form-floating col-6">
+                <input type="text" class="form-control" id="floatingPassword" placeholder="Apellidos">
+                <label for="floatingInput">Apellidos</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-floating mb-3 col-6">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Telefono">
+                <label for="floatingInput">Teléfono</label>
+            </div>
+            <div class="form-floating col-6">
+                <input type="text" class="form-control" id="floatingPassword" placeholder="Dirección">
+                <label for="floatingPassword">Dirección</label>
+            </div>
+        </div>
+    </div>
+    <div class="container style-container">
+        <h2>Validación</h2>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Nombres</label>
+              <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+              <div class="valid-feedback">
+                Campo llenado correctamente!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Apellidos</label>
+              <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">Usuario</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Por favor, seleccione un usuario...
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Por favor, ingrese una ciudad válida.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">Municipio</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Seleccione...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor, seleccione un municipio válido.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="validationCustom05" required>
+              <div class="invalid-feedback">
+                Por favor, seleccione una dirección válida.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Aceptar Términos y Condiciones
+                </label>
+                <div class="invalid-feedback">
+                  Debe aceptar Terminos y Condiciones para poder continuar.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+          </form>
+    </div>
+    <div class="container style-container">
+        <div class="row">
+            <h2>Alert</h2>
+            <div id="liveAlertPlaceholder"></div>
+            <button type="button" class="btn btn-primary col-2" id="liveAlertBtn">Mostrar Alert</button>
+            <h2>Alert con ícono</h2>
+            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                <div>
+                  Un ejemplo de un alert con ícono
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="container style-container">
+        <h2>Botones</h2>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>
+    </div>
+    <div class="container style-container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" data-bs-interval="3000">
+              <div class="carousel-item active">
+                <img src="img/carrousel1_venecia_1200x700.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Venecia</h3>
+                  <p>La reina del Adriatico.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="img/Carrousel2_Paris_1200x700.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>París</h5>
+                  <p>La Ciudad de la luz.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="img/Carrousel3_Kyoto_1200x700.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Kyoto</h5>
+                  <p>Cultura y Modernidad.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+</body>
+</html>

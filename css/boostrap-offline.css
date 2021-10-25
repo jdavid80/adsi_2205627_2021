@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+}
+h2 {
+    margin-top: 35px;
+}
+.style-container {
+    margin: 30px auto 30px auto;
+}
+.cursor-input {
+    cursor: pointer;
+}
