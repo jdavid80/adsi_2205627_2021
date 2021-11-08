@@ -10,3 +10,6 @@ h2 {
 .cursor-input {
     cursor: pointer;
 }
+.space-elements {
+    margin: 15px;
+}
