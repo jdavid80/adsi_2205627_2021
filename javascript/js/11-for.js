@@ -23,3 +23,9 @@ console.log("Datos del Aprendiz: ");
 for (var i = 1; i <= aprendiz.length - 1; i++) {
     console.log(aprendiz[i]);
 }
+
+/* Generar números pares del 1 al 20 */
+for (let i = 2; i <= 20; i++) {
+    console.log(i);
+    i++;
+}
