@@ -8,8 +8,8 @@
     grid-template-areas:"subtotal      subtotal      subtotal subtotal subtotal"
                         "infoProductos infoProductos infoProductos infoProductos infoProductos"
                         "libro         libro         libro     libro infoLibro" 
-                        "contenedor-1  contenedor-2   contenedor-3  contenedor-3 guardar-mas-tarde"
-                        "empty        empty           empty      empty      btn-eliminar";
+                        "contenedor-1  contenedor-2   contenedor-3  contenedor-3 btn-eliminar"
+                        "empty        empty           empty      empty      guardar-mas-tarde";
 }
 .subtotal {
     grid-area: subtotal;
@@ -88,19 +88,27 @@
     font-size: 1.5em;
 }
 .guardarMasTarde {
+    margin-top: 10px;
     grid-area: guardar-mas-tarde;
     width: 180px;
 }
 .btn-eliminar {
     grid-area: btn-eliminar;
     width: 120px;
-    margin-top: 10px;
 }
 .btn-eliminar, .guardarMasTarde {
     border: 1px solid rgb(64,64,64, .3);
     border-radius: 5px;
-    padding: 6px;
+    padding: 8px;
+    cursor: pointer;
 }
+.texto-guardarMasTarde {
+    cursor: pointer;
+}
+.texto-eliminar {
+    cursor: pointer;
+}
+
 .vacio {
     grid-area: vacio;
 }

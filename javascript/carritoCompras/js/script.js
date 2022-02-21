@@ -6,14 +6,14 @@ numeroProductosInfo();
 
 function numeroProductosInfo() {
     let numeroActual = document.getElementById("cantidadProductos").innerHTML;
-    document.getElementById("cantidad-productos").innerHTML = numeroActual;
-    if(numeroActual >= 2) {
-        document.getElementById("cantidad-productos").innerHTML = numeroActual.toString() + " productos";
+    document.getElementById("info-cantidad").innerHTML = numeroActual;
+    if(numeroActual >= 2 || numeroActual == 0) {
+        document.getElementById("info-cantidad").innerHTML = numeroActual.toString() + " productos";
     }
     else {
-        document.getElementById("cantidad-productos").innerHTML = numeroActual.toString() + " producto";
+        document.getElementById("info-cantidad").innerHTML = numeroActual.toString() + " producto";
     }
-    /* document.getElementById("cantidad-productos").innerHTML = numeroActual; */
+    /* document.getElementById("info-cantidad").innerHTML = numeroActual; */
 
 }
 function calcularSubtotal() {
