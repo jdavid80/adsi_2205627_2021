@@ -6,16 +6,17 @@
     <title>Contactenos</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contacto.css">
+    <script src="js/contactenos.js"></script>
 </head>
 <body>
     <h1>Contactenos</h1>
-    <form action="confirmacion.html" method="get">
+    <!-- <form method="get">-->
         <fieldset>
-        <legend>Ingrese la información</legend>
+        <legend>Ingrese la información</legend> 
         Por favor, ingrese sus nombres<br>
-        <input type="text" name="nombres"><br><br>
+        <input id="nombres" type="text" name="nombres"><br><br>
         Por favor, ingrese sus apellidos<br>
-        <input type="text" name="apellidos"><br><br>
+        <input id="apellidos" type="text" name="apellidos"><br><br>
         Ingrese su petición, queja o reclamo<br>
         <textarea name="Pregunta" cols="40" rows="5"></textarea><br><br>AAA
         Genero<br>
@@ -41,9 +42,9 @@
             <option value="Oporapa">Oporapa</option><br>
             <option value="Elias">Elias</option><br>
         </select><br><br>
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar" onclick="validar();">
     </fieldset>
-    </form>
+     <!--</form> -->
     <!-- <a href="index.html">Volver a la página principal</a> -->
 </body>
 </html>
