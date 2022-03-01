@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="main-content">
+        <form>
+            <legend>Registro de Productos</legend>
+                <label class="label-codigo-producto">Código del producto</label>
+                <input class="style-codigo-producto" type="text" id="codigoProducto"><br>
+                <label class="label-description">Descripción</label>
+                <input class="style-description" type="text" id="descripcionProducto"><br>
+                <label class="label-valor-unitario">Valor Unitario</label>
+                <input class="style-valor-unitario" type="text" id="valorUnitario">
+                <label class="label-unidades-stock">Unidades en Stock</label>
+                <input class="style-unidades-stock" type="text" id="unidadesStock">
+                <!-- <label class="label-cantidad">Cantidad</label>
+                <input class="style-cantidad" type="text" id="cantidadProducto">
+                <label class="label-valor-total">Valor Total</label>
+                <input class="style-valor-total" type="text" id="valorTotal"> -->
+                <input class="boton-cargar" type="button" value="Cargar Producto" onclick="crearTabla();"> 
+        </form>
+        
+        <div id="table-js"></div>
+    </div>  
+    <script src="js/script.js"></script>
+</body>
+</html>
