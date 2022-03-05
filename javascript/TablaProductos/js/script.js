@@ -64,6 +64,8 @@ function crearEncabezado() {
     nodeToAddTDTH3.appendChild(nodeToAddtext);
     nodeToAddtext = document.createTextNode("Unidades en Stock"); 
     nodeToAddTDTH4.appendChild(nodeToAddtext);
+   /*  nodeToAddTH4.setAttribute() */
+
 }
 
 function limpiarFormulario() {

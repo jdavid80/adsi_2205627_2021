@@ -1,0 +1,30 @@
+.img-style {
+    /* padding: 20px;
+    box-sizing:border-box; */
+    width: 100%;
+}
+.style-valor {
+    font-size: 1.3em;
+    font-weight: 900;
+    display: block;
+}
+.style-contentImg {
+    padding: 20px;
+    box-sizing:border-box;
+    /* width: 100%; */
+}
+.style-anyo {
+    font-size: 1.1em;
+    display: block;
+}
+.style-contentSeparador {
+    display: inline-block;
+    box-sizing: border-box;
+    padding-right: 4px;
+    margin-right: 4px;
+    border-right: 1px solid rgb(48,48,48,.7);
+}
+.style-descripcion {
+    display: block;
+    margin-top: 20px;
+}
