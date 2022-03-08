@@ -18,11 +18,15 @@ function Automovil(marca, version, anyo, precio, kilometraje, motor, ciudad, ima
     this.imagen = imagen;
 }
 
-let auto1 = new Automovil("Mazda", "Touring", 2015, 41500000, 65800, 2000, "Bogota", "img/mazda3_2015.jpeg");
+let auto1 = new Automovil("Mazda", "Touring", 2015, 41500000, 65800, 2000, "Bogotá", "img/mazda3_2015.jpeg");
 let auto2 = new Automovil("Mazda", "Prime", 2021, 82500000, 12650, 2000, "Cali", "img/mazda3_2021.jpeg");
+let auto3 = new Automovil("Mazda", "Touring", 2019, 73900000, 22090, 2000, "Medellín", "img/mazda3_2019.jpeg");
 
 function llamarVehiculo() {
+    limpiarVentana();
     mostrarVehiculo(auto2);
+    mostrarVehiculo(auto1);
+    mostrarVehiculo(auto3);
 }
 
 function mostrarVehiculo(auto) {
@@ -37,9 +41,10 @@ function mostrarVehiculo(auto) {
     contenedorImg.appendChild(imgAuto);
 
     let valorAuto = document.createElement("label");
+    auto.precio = new Intl.NumberFormat('es-ES').format(auto.precio);
     let textoValorAuto = document.createTextNode(auto.precio);
     valorAuto.appendChild(textoValorAuto);
-    valorAuto.setAttribute("class", "style-valor");
+    valorAuto.setAttribute("class", "style-precio");
     contenedorImg.appendChild(valorAuto);
 
     let contenedorSeparador = document.createElement("div");
@@ -63,4 +68,24 @@ function mostrarVehiculo(auto) {
     descripcionVehiculo.setAttribute("class", "style-descripcion");
     contenedorImg.appendChild(descripcionVehiculo);
 }
+/* function leerInput() {
+    let textoBusqueda = document.getElementById("llamarVehiculo");
 
+    textoBusqueda.addEventListener("keyup", function(event) {
+        if (event.keyCode)
+    })
+} */
+window.addEventListener("keydown", function(event) {
+    let busqueda = document.getElementById("textoBusqueda").value;
+    if(event.key == "Enter") {
+        if (busqueda == "Mazda 3") {
+            llamarVehiculo();
+        }
+        else {
+        this.alert("No se han encontrado coincidencias.");
+        }
+    }
+});
+function limpiarVentana() {
+    document.getElementById("main-content").innerHTML = "";
+}
