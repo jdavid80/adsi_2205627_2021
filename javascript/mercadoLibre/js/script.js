@@ -7,24 +7,35 @@
     imagen: undefined
 }; */
 
-function Automovil(marca, version, anyo, precio, kilometraje, motor, ciudad, imagen) {
-    this.marca = marca;
-    this.version = version;
-    this.anyo = anyo;
-    this.precio = precio;
-    this.kilometraje = kilometraje;
-    this.motor = motor;
-    this.ciudad = ciudad;
-    this.imagen = imagen;
+class Automovil {
+    constructor(marca, modelo, version, anyo, precio, kilometraje, motor, ciudad, imagen) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.version = version;
+        this.anyo = anyo;
+        this.precio = precio;
+        this.kilometraje = kilometraje;
+        this.motor = motor;
+        this.ciudad = ciudad;
+        this.imagen = imagen;
+    }
 }
 
-let auto1 = new Automovil("Mazda", "Touring", 2015, 41500000, 65800, 2000, "Bogotá", "img/mazda3_2015.jpeg");
-let auto2 = new Automovil("Mazda", "Prime", 2021, 82500000, 12650, 2000, "Cali", "img/mazda3_2021.jpeg");
-let auto3 = new Automovil("Mazda", "Touring", 2019, 73900000, 22090, 2000, "Medellín", "img/mazda3_2019.jpeg");
-let auto4 = new Automovil("Mazda", "Touring", 2019, 73900000, 22090, 2000, "Medellín", "img/mazda3_2022.jpeg");
-let auto5 = new Automovil("Toyota", "Corolla", 2020, 81900000, 29090, 2000, "Neiva", "img/toyotaCorolla_2020.jpeg");
+let auto = new Automovil("Mazda", "3", 2019);
+
+
+
+let auto1 = new Automovil("Mazda", "3", "Touring", 2015, 41500000, 65800, 2000, "Bogotá", "img/mazda3_2015.jpeg");
+let auto2 = new Automovil("Mazda", "3", "Prime", 2021, 82500000, 12650, 2000, "Cali", "img/mazda3_2021.jpeg");
+let auto3 = new Automovil("Mazda", "3", "Touring", 2019, 73900000, 22090, 2000, "Medellín", "img/mazda3_2019.jpeg");
+let auto4 = new Automovil("Mazda", "3", "Touring", 2019, 73900000, 22090, 2000, "Medellín", "img/mazda3_2022.jpeg");
+let auto5 = new Automovil("Toyota", "Corolla", "Seg", 2020, 81900000, 29090, 2000, "Neiva", "img/toyotaCorolla_2020.jpeg");
 
 function llamarVehiculo() {
+
+    
+
+
     limpiarVentana();
     let marcaAuto = document.getElementById("textoBusqueda").value;
     if (marcaAuto == "Mazda 2") {
