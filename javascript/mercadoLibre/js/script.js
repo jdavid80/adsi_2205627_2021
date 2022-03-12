@@ -1,11 +1,3 @@
-/* let automovil = {
-    marca: undefined,
-    anyo: undefined,
-    precio: undefined,
-    motor: undefined,
-    ciudad: undefined,
-    imagen: undefined
-}; */
 
 class Automovil {
     constructor(marca, modelo, version, anyo, precio, kilometraje, motor, ciudad, imagen) {
@@ -21,32 +13,17 @@ class Automovil {
     }
 }
 
-let auto = new Automovil("Mazda", "3", 2019);
-
-
-
 let auto1 = new Automovil("Mazda", "3", "Touring", 2015, 41500000, 65800, 2000, "Bogotá", "img/mazda3_2015.jpeg");
 let auto2 = new Automovil("Mazda", "3", "Prime", 2021, 82500000, 12650, 2000, "Cali", "img/mazda3_2021.jpeg");
 let auto3 = new Automovil("Mazda", "3", "Touring", 2019, 73900000, 22090, 2000, "Medellín", "img/mazda3_2019.jpeg");
 let auto4 = new Automovil("Mazda", "3", "Touring", 2019, 73900000, 22090, 2000, "Medellín", "img/mazda3_2022.jpeg");
 let auto5 = new Automovil("Toyota", "Corolla", "Seg", 2020, 81900000, 29090, 2000, "Neiva", "img/toyotaCorolla_2020.jpeg");
 
-function llamarVehiculo() {
-
-    
-
-
-    limpiarVentana();
-    let marcaAuto = document.getElementById("textoBusqueda").value;
-    if (marcaAuto == "Mazda 2") {
-        
-    }
-    else if (marcaAuto == "Toyota")
-    {
-         
-    }
+function mostrar() {
+    mostrarVehiculo(auto1);
+    mostrarVehiculo(auto2);
+    mostrarVehiculo(auto3);
 }
-
 function mostrarVehiculo(auto) {
     let contenedorPrincipal = document.getElementById("main-content");
     let contenedorImg = document.createElement("div");
@@ -59,14 +36,22 @@ function mostrarVehiculo(auto) {
     contenedorImg.appendChild(imgAuto);
 
     let valorAuto = document.createElement("label");
-    auto.precio = new Intl.NumberFormat('es-ES', {}).format(auto.precio);
+/*     alert(auto.precio); */
+    let precioFormat = new Intl.NumberFormat('es-ES', {}).format(auto.precio);
     
-    let textoValorAuto = document.createTextNode("$" + auto.precio);
+    
+    let textoValorAuto = document.createTextNode("$" + precioFormat);
     valorAuto.appendChild(textoValorAuto);
     valorAuto.setAttribute("class", "style-precio");
     contenedorImg.appendChild(valorAuto);
 
-    let contenedorSeparador = document.createElement("div");
+    let descripcionVehiculo = document.createElement("label");
+    let textoDescripcionVehiculo = document.createTextNode(auto.marca + " " + auto.version);
+    descripcionVehiculo.appendChild(textoDescripcionVehiculo);
+    descripcionVehiculo.setAttribute("class", "style-descripcion");
+    contenedorImg.appendChild(descripcionVehiculo);
+
+    /* let contenedorSeparador = document.createElement("div"); */
     let anyoVehiculo = document.createElement("label");
     let textoAnyoVehiculo = document.createTextNode(auto.anyo);
     anyoVehiculo.appendChild(textoAnyoVehiculo);
@@ -86,11 +71,7 @@ function mostrarVehiculo(auto) {
     
     /* contenedorImg.appendChild(kilometrajeVehiculo); */
 
-    let descripcionVehiculo = document.createElement("label");
-    let textoDescripcionVehiculo = document.createTextNode(auto.marca + " " + auto.version);
-    descripcionVehiculo.appendChild(textoDescripcionVehiculo);
-    descripcionVehiculo.setAttribute("class", "style-descripcion");
-    contenedorImg.appendChild(descripcionVehiculo);
+    
 }
 /* function leerInput() {
     let textoBusqueda = document.getElementById("llamarVehiculo");
@@ -104,8 +85,8 @@ window.addEventListener("keydown", function(event) {
     if(event.key == "Enter") {
         limpiarVentana();
         if (busqueda == "Mazda 3") {
-            mostrarVehiculo(auto2);
             mostrarVehiculo(auto1);
+            mostrarVehiculo(auto2);
             mostrarVehiculo(auto3);
             mostrarVehiculo(auto4);
         }
