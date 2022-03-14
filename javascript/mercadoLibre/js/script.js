@@ -19,11 +19,6 @@ let auto3 = new Automovil("Mazda", "3", "Touring", 2019, 73900000, 22090, 2000, 
 let auto4 = new Automovil("Mazda", "3", "Touring", 2019, 73900000, 22090, 2000, "Medellín", "img/mazda3_2022.jpeg");
 let auto5 = new Automovil("Toyota", "Corolla", "Seg", 2020, 81900000, 29090, 2000, "Neiva", "img/toyotaCorolla_2020.jpeg");
 
-function mostrar() {
-    mostrarVehiculo(auto1);
-    mostrarVehiculo(auto2);
-    mostrarVehiculo(auto3);
-}
 function mostrarVehiculo(auto) {
     let contenedorPrincipal = document.getElementById("main-content");
     let contenedorImg = document.createElement("div");
@@ -64,22 +59,8 @@ function mostrarVehiculo(auto) {
     contenedorImg.appendChild(kilometrajeVehiculo);
     
     anyoVehiculo.setAttribute("class", "style-anyo");
-   /*  contenedorSeparador.appendChild(anyoVehiculo);
-    contenedorImg.appendChild(contenedorSeparador);
-    contenedorSeparador.setAttribute("class", "style-contentSeparador"); */
-
-    
-    /* contenedorImg.appendChild(kilometrajeVehiculo); */
-
-    
 }
-/* function leerInput() {
-    let textoBusqueda = document.getElementById("llamarVehiculo");
 
-    textoBusqueda.addEventListener("keyup", function(event) {
-        if (event.keyCode)
-    })
-} */
 window.addEventListener("keydown", function(event) {
     let busqueda = document.getElementById("textoBusqueda").value;
     if(event.key == "Enter") {
