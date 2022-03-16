@@ -68,7 +68,7 @@ window.addEventListener("keydown", function(event) {
         if (busqueda == "Mazda 3") {
             mostrarVehiculo(auto1);
             mostrarVehiculo(auto2);
-            mostrarVehiculo(auto3);
+            /* mostrarVehiculo(auto3); */
             mostrarVehiculo(auto4);
         }
         else if (busqueda == "Toyota Corolla") {
