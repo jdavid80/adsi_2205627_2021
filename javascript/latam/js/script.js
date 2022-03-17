@@ -4,6 +4,7 @@ let horarioVuelo = undefined;
 /* let horaSalida = new Date(2022, 02, 10, 8, 12, 0); */
 let horaLlegada = new Date(2022, 02, 13, 12, 12, 0);
 
+
 class Vuelos {
     constructor(horaSalida, horaLlegada, duracion, origen, destino, precio, stopping, economic) {
         this.horaSalida = horaSalida;
@@ -17,9 +18,15 @@ class Vuelos {
     }
 }
 
+/* window.onload = function() {
+    buscarVuelos();
+} */
 window.onload = function() {
     buscarVuelos();
-}
+};
+    
+
+
 /* function establecerJornada(horaEvento) {
     if (horaEvento.getHours < 12) {
         jornada = "A.M.";
@@ -76,7 +83,7 @@ function definirJornada(horaEvento) {
         "horaSalida":  horaSalida1Str,
         "horaLlegada": horaLlegada1Str,
         "duracion": "1h 20Min",
-        "origen": "BGT",
+        "origen": "BOG",
         "destino": "CTG",
         "precio": 375000,
         "stopping": 1,
@@ -86,8 +93,6 @@ function definirJornada(horaEvento) {
         "horaSalida":  horaSalida2Str,
         "horaLlegada": horaLlegada2Str,
         "duracion": "1h 20Min",
-        "origen": "Bogotá",
-        "destino": "Cartagena",
         "duracion": "1h 20Min",
         "origen": "BGT",
         "destino": "CTG",
@@ -99,26 +104,24 @@ function definirJornada(horaEvento) {
         "horaSalida":  horaSalida3Str,
         "horaLlegada": horaLlegada3Str,
         "duracion": "1h 20Min",
-        "origen": "Bogotá",
-        "destino": "Cartagena",
         "duracion": "1h 20Min",
         "origen": "BGT",
         "destino": "CTG",
         "precio": 420000,
         "stopping": 1,
         "economic": 1
-    }]
+    }];
 /* } */
 
 
 function buscarVuelos() {
     /* establecerHorarios(); */
-    let i = 0;
     let duracionTxt = "Duración";
     for(let i = 0; i < vuelo.length; i++) {
         cargarVuelos(vuelo[i].horaSalida,  vuelo[i].horaLlegada, duracionTxt,  
             vuelo[i].origen, vuelo[i].destino, vuelo[i].duracion, vuelo[i].precio, vuelo[i].stopping, vuelo[i].economic);
     } 
+    
     /* 
         alert(vuelos[i].horario);
     cargarVuelos(vuelos[1]);
@@ -134,6 +137,7 @@ function buscarVuelos() {
 } */
 
 /* let vuelosCartagena = vuelos.filter */
+
 
 function cargarVuelos(horaSalida, horaLlegada, duracionTxt, origen, destino, duracionVueloStr, precioVuelo, paradasVuelo,  economicVuelos) {
     let contentVuelo = document.createElement("div");
