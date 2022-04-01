@@ -13,8 +13,8 @@
     font-family: sans-serif;
     /* padding: 20px; */
     text-align: center;
-    width: 250px;
-    height: 350px;
+    width: 300px;
+    height: 400px;
     /* transform: translate(-50%, -50%) scale(0.1); */
     transform: translate(40%, 50%) scale(0.1);
     transition: transform 0.5s, bottom 0.5s;
@@ -27,6 +27,12 @@
     /* right: 0;
     bottom: 50px; */
     transform: translate(-10%, -10%) scale(1);
+}
+.titulo-form {
+    margin-top: 10px;
+}
+.subtitulo-form {
+    margin-top: 10px;
 }
 /* .overlay {
     background: rgb(0,0,0,0.3);
@@ -162,6 +168,48 @@
     grid-area: input-nuevo;
     text-align: left;
 }
+input {
+    display: block;
+    margin: 15px auto;
+    height: 35px;
+    border-radius: 5px;
+    font-family: Lato, sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: rgb(64,64,64);
+    background:rgba(245,245,245);
+    outline: none;
+    /* outline: 1px solid orange; */
+    border: 1px solid rgba(0,0,0,.5);
+    padding-left: 5px;
+}
+input:focus, textarea:focus {
+    background-color: white;
+}
+input::placeholder {
+    font-size: .8em;
+}
+input[type="submit"] {
+    width: 100%; 
+    cursor: pointer;
+    background-color: rgb(0,122,204);
+    color: white;
+
+    font-weight: 400;
+    padding: 10px;
+}
+.text-area {
+    height: 100px;
+    width: 200px;
+    resize: none;
+    overflow-y: auto;
+    color: rgb(64,64,64);
+    background:rgba(245,245,245);
+    font-family: Lato, sans-serif;
+    outline: none;
+    border: 1px solid rgba(0,0,0,.5);
+    padding-left: 5px;
+}
 .boton-modal {
     position: fixed;
     bottom: 15px;
@@ -180,6 +228,14 @@
     cursor: pointer;
     font-family: lato, sans-serif;
     font-weight: 500;
+}
+form {
+    width: 250px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;
+    font-family: Lato, sans-serif;
 }
 @media (max-width: 700px) {
     .sliderMain {

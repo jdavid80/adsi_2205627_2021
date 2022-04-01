@@ -1,3 +1,4 @@
+"use strict"
 let fechaVuelo = undefined;
 let jornada = undefined;
 let horarioVuelo = undefined;
