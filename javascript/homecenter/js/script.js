@@ -3,47 +3,33 @@ let overlay = document.getElementById("overlay");
 let popup = document.getElementById("popup");
 let btnCerrarPopUp = document.getElementById("btn-cerrar-popup");
 
-/* btnAbrirPopup.addEventListener("click", function() {
-    overlay.classList.add("active");
-    popup.classList.add("active");
-});
-btnCerrarPopUp.addEventListener("click", function() {
-    overlay.classList.remove("active");
-    popup.classList.remove("active");
-}); */
-
 const lupa = document.getElementById("idLupa");
-lupa.addEventListener("click", miFunction);
+lupa.addEventListener("click", abrirBusqueda);
 
-/* window.addEventListener("click", function() {
-    cargar();
-}); */
-/* function limpiarEncabezado() {
-    document.getElementById("idHeader").innerHTML = "";
-} */
-function miFunction() {
-    document.getElementById("idHeader").innerHTML = "";
-    llamarNuevaVentana();
+const lblClose = document.getElementById("idCerrar");
+lblClose.addEventListener("click", cerrarBusqueda);
+
+function abrirBusqueda() {
+    let removeEncabezado = document.getElementById("idHeader");
+    removeEncabezado.classList.add("headerInvisible");
+    let nuevoHeader = document.getElementById("header2");
+    nuevoHeader.classList.remove("header2Invisible");
+    nuevoHeader.classList.add("header2Visible");
 }
-
-function llamarNuevaVentana() {
-    let contenedorNuevo = document.createElement("div");
-    let contenedorOld = document.getElementById("idHeader");
-    contenedorOld.appendChild(contenedorNuevo);
-    contenedorNuevo.setAttribute("class", "contenedor-nuevo");
-
-    let iconoLupa = document.createElement("img");
-    let contenedor = document.getElementById("idHeader");
-    contenedor.appendChild(iconoLupa);
-    iconoLupa.setAttribute("src", "img/lupa.png");
-    iconoLupa.setAttribute("class", "lupa-nueva");
-
-    let inputNuevo = document.createElement("input");
-    contenedor.appendChild(inputNuevo);
-    inputNuevo.setAttribute("type", "text");
-    inputNuevo.setAttribute("class", "input-nuevo");
+function cerrarBusqueda() {
+     let removerHeader2 = document.getElementById("header2");
+    removerHeader2.classList.remove("header2Visible");
+    removerHeader2.classList.add("header2Invisible");
+    let addHeader1 = document.getElementById("idHeader");
+    addHeader1.classList.remove("headerInvisible");
 }
 function openPopup() {
     let popup = document.getElementById("popup");
     popup.classList.add("open-popup");
+    popup.classList.remove("popup");
+}
+function cerrarPopup() {
+    let popup = document.getElementById("popup");
+    popup.classList.add("popup");
+    popup.classList.remove("open-popup");
 }

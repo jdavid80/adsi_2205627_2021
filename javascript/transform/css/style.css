@@ -1,0 +1,94 @@
+.transform {
+    width: 150px;
+    height: 150px;
+    background-color: darkcyan;
+    transition: transform 5s;
+}
+.main-content {
+   width: 300px;
+   height: 200px; 
+   border: 1px solid rgb(48,48,48,.8);
+}.div-translate {
+    width: 100px;
+    height: 100px;
+    background-color: goldenrod;
+    transition: transform 1s;
+}
+.div-translate:hover {
+    transform: translate(200px, 100px);
+}
+
+.transform1:hover {
+    transform: translate(300px, 300px);
+}
+
+
+
+.transform2 {
+    width: 50px;
+    height: 50px;
+    background-color: goldenrod;
+    transition: background-color, transform 1500ms;
+}
+.transform2:hover {
+    transform: scale(5,3);
+    cursor: pointer;
+    background-color: steelblue;
+}
+/* .transform2 {
+    width: 50px;
+    height: 150px;
+    background-color: steelblue;
+    transition: width 1500ms, background-color 3s;
+}
+.transform2:hover {
+    width: 200px;
+    background-color: goldenrod;
+} */
+/* .transform3 {
+    width: 50px;
+    height: 50px;
+    background-color: steelblue;
+    transition: width 1s, height 1s, transform 1s;
+} */
+/* .transform3:hover {
+   /*  transform: scale(2,2); */
+   /* transition: width 1s, height 1s, transform 1s; */
+    /* transform: translate(1%, -1%);
+    width: 150px;
+    height: 150px; 
+} */
+.transform-hide {
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    background-color: slateblue;
+    transition: width 600ms, height 600ms;
+}
+.transform-visible {
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    background-color: slateblue;
+    transition: width 600ms, height 600ms;
+    width: 300px;
+    height: 300px;
+}
+.botonCerrar {
+    display: none;
+}
+.botonCerrarVisible {
+    display: block;
+    cursor: pointer;
+    text-align: right;
+    margin-right: 15px;
+    margin-top: 15px;
+    font-family: sans-serif;
+}
+#botonForm {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}

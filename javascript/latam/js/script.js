@@ -2,9 +2,8 @@
 let fechaVuelo = undefined;
 let jornada = undefined;
 let horarioVuelo = undefined;
-/* let horaSalida = new Date(2022, 02, 10, 8, 12, 0); */
-let horaLlegada = new Date(2022, 02, 13, 12, 12, 0);
-
+let horaSalida = new Date(2022, 2, 10, 8, 12, 0);
+let horaLlegada = new Date(2022, 2, 13, 12, 12, 0);
 
 class Vuelos {
     constructor(horaSalida, horaLlegada, duracion, origen, destino, precio, stopping, economic) {
@@ -37,7 +36,7 @@ window.onload = function() {
         horaEvento.setHours = horaEvento.getHours() - 12;
     }
 }
-
+let textoPredeterminado = document.createTextNode("Viaja en " + fecha);
 
 if (horaLlegada.getHours < 12) {
     jornada = "A.M.";
@@ -65,18 +64,18 @@ function definirJornada(horaEvento) {
     return horaEventoTxt;
 }
 /* function establecerHorarios() { */
-    let horaSalida1 = new Date(2022, 02, 12, 10, 12, 0);
-    let horaLlegada1 = new Date(2022, 02, 13, 11, 32, 0);
+    let horaSalida1 = new Date(2022, 2, 12, 10, 12, 0);
+    let horaLlegada1 = new Date(2022, 2, 13, 11, 32, 0);
     let horaSalida1Str = definirJornada(horaSalida1);
     let horaLlegada1Str = definirJornada(horaLlegada1);
 
-    let horaSalida2 = new Date(2022, 02, 12, 8, 35, 0);
-    let horaLlegada2 = new Date(2022, 02, 13, 9, 45, 0);
+    let horaSalida2 = new Date(2022, 2, 12, 8, 35, 0);
+    let horaLlegada2 = new Date(2022, 2, 13, 9, 45, 0);
     let horaSalida2Str = definirJornada(horaSalida2);
     let horaLlegada2Str = definirJornada(horaLlegada2);
 
-    let horaSalida3 = new Date(2022, 02, 12, 11, 40, 0);
-    let horaLlegada3 = new Date(2022, 02, 13, 12, 50, 0);
+    let horaSalida3 = new Date(2022, 2, 12, 11, 40, 0);
+    let horaLlegada3 = new Date(2022, 2, 13, 12, 50, 0);
     let horaSalida3Str = definirJornada(horaSalida3);
     let horaLlegada3Str = definirJornada(horaLlegada3);
 

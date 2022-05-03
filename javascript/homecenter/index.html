@@ -11,18 +11,21 @@
 </head>
 <body>
     <div id="idHeader" class="encabezado">
-        <!-- <label class="menu-hamburguer">&#9776</label> -->
         <label class="menu-hamburguer"><i class="fas fa-bars"></i></label>
         <div class="img-logo">
             <img class="icono-homecenter" src="img/icono-homecenter-4.png" alt="">
         </div>
-        <!-- <img class="icono-homecenter" src="img/icono-homecenter-4.png" alt=""> -->
-        <!-- <label id="idLupa" class="icono-lupa"><i class="fas fa-magnifying-glass"></i></label> -->
         <label id="idLupa" class="icono-lupa"><img src="img/lupa.png" alt="Lupa"></label>
         <div class="circle">0</div>
         <label class="carrito-compras"><img src="img/shopping-cart.png"></label></i></label>
         <label class="icono-user"><img src="img/account.png"></label></label>
     </div>
+    <div id="header2" class="header2Visible">
+        <input type="text" class="input-nuevo" placeholder="¿Qué estás buscando?">
+        <img src="img/lupa.png" class="lupa-nueva">
+        <label id="idCerrar" class="cerrarBusqueda">X</label>
+    </div>
+    
     <div class="contenedor">
         <!-- <img id="sliderMain" class="sliderMain" > -->
         <div  class="sliderMain"></div>
@@ -30,6 +33,7 @@
         <!-- <input type="button" value="Ver Ventana Modal" id="btn-abrir-popup"> -->
         <div id="btn-abrir-popup" class="boton-modal" onclick="openPopup();">Ana</div>
         <div id="popup" class="popup">
+            <label class="cerrarForm" onclick="cerrarPopup()">X</label>
             <h3 class="titulo-form">Chat de Ventas</h3>
             <h4 class="subtitulo-form">Ingresa tus datos</h4>
             <form action="">
@@ -37,7 +41,7 @@
                     <input type="text" name="" id="" placeholder="Nombres">
                     <input type="text" name="" id="" placeholder="Apellidos">
                     <textarea class="text-area" name="" id="" placeholder="Inquietud" maxlength="200"></textarea>
-                    <input class="btn-submit" type="submit" value="Enviar Inquietud">
+                    <input class="btn-submit" type="submit" value="Enviar Consulta">
                 </div>
             </form>
             <button class="btn" onclick="closePopup();"></button>

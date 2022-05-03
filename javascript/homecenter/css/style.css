@@ -5,29 +5,28 @@
 }
 .popup {
     position: absolute;
-    /* right: -150px; */
-    right: 0;
-    bottom: -20px;
-    background: #f8f8f8;
-    box-shadow: 0 0 5px 0 rgba(0,0,0, .3);
-    font-family: sans-serif;
-    /* padding: 20px; */
-    text-align: center;
-    width: 300px;
-    height: 400px;
-    /* transform: translate(-50%, -50%) scale(0.1); */
-    transform: translate(40%, 50%) scale(0.1);
-    transition: transform 0.5s, bottom 0.5s;
-    border-radius: 15px;
-    visibility: hidden;
+    bottom: 40px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    background-color: slateblue;
+    transition: width 600ms, height 600ms;
+    display: none;
 }
 .open-popup {
-    visibility: visible;
-    /* left: 80%; */
-    /* right: 0;
-    bottom: 50px; */
-    transform: translate(-10%, -10%) scale(1);
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    background-color: slateblue;
+    transition: width 600ms, height 600ms;
+    width: 300px;
+    height: 300px;
 }
+/* .cerrar-popup {
+    width: 0;
+    height: 0;
+    transition: width 0.5s, height 0.5s;
+} */
 .titulo-form {
     margin-top: 10px;
 }
@@ -81,13 +80,13 @@
     grid-template: "hamburguer  icon-homecenter  empty icono-lupa icon-circle carrito-compras icono-user" 55px /
                     40px         40px             1fr  40px       60px         40px            40px;
 }
-.contenedor-nuevo {
-    background-color: blue;
+.header2Visible {
     display: grid;
+    border-bottom: 3px solid rgba(0,0,0, .4);
     width: 100%;
     height: 100%;
-    grid-template: "input-nuevo " 55px /
-                    1fr        ;
+    grid-template: "lupa-nueva input-nuevo cerrarBusqueda" 85px /
+                    1fr         8fr         1fr;
 }
 /* input-nuevo */
 .encabezado img{
@@ -115,17 +114,27 @@
     margin-top: 12px;
     /* align-items: center; */
 }
+.icono-homecenter-invisible {
+    visibility: hidden;
+}
+.headerInvisible {
+    display: none;
+}
 .icono-lupa {
     display: flex;
     grid-area: icono-lupa;
     /* text-align: right; */
     /* margin-right: 150px; */
-    /* justify-content: flex-end; */
+    justify-content: flex-end;
     align-items: center;
     width: 60%;
+    cursor: pointer;
+}
+.icono-lupa-invisible {
+    display: none;
 }
 .circle {
-    grid-area: circle;
+    /* grid-area: circle; */
     display: flex;
     height: 24px;
     width: 24px;
@@ -153,21 +162,44 @@
     margin-left: 10px;
 }
 .lupa-nueva {
-    /* display: flex; */
+    display: flex;
     /* grid-area: icono-lupa; */
     /* text-align: right; */
     /* margin-right: 150px; */
     /* justify-content: flex-end; */
-    /* align-items: center; */
-    width: 40%;
-    height: 20px;
-    inline-size: 20%;
-    grid-area: lupa-nueva;
+    align-items: right;
+    justify-content: flex-end;
+   /*  width: 40%;
+    height: 20px;*/
+    margin-top: 15px;
+    margin-left: 40px;
+    inline-size: 20%;   
+    height: 22px;
+    width: 20px;
+    grid-area: lupa-nueva; 
 }
 .input-nuevo {
     grid-area: input-nuevo;
+    display: flex;
+   /*  margin-left: 40px; */
     text-align: left;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 10px;
+    width: 90%;
+    background-color: white;
+    border: none;
 }
+.input-nuevo::placeholder {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+}
+.header2Invisible {
+    display: none;
+}
+/* .header2Visible {
+    display: grid;
+} */
 input {
     display: block;
     margin: 15px auto;
@@ -236,6 +268,33 @@ form {
     margin: 10px;
     border-radius: 7px;
     font-family: Lato, sans-serif;
+}
+/* .cerrarBusquedaOculto {
+   display: none;
+} */
+.cerrarBusqueda {
+    grid-area: cerrarBusqueda;
+     font-size: 1.3em;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    align-items: center;
+    color: rgb(24,24,24,.8);
+    font-weight: 400;
+    justify-content: right;
+    margin-right: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    display: block;
+}
+.cerrarForm {
+    cursor: pointer;
+    display: block;
+    /* width: 100%; */
+    text-align: right;
+    margin-right: 25px;
+    margin-top: 15px;
+    font-size: 1.3em;
+    color: rgb(24,24,24,.8);
 }
 @media (max-width: 700px) {
     .sliderMain {
